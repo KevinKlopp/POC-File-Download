@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>File Download</title>
+    <title>Download</title>
 </head>
 <body>
-    <p>If you see this message, the download has been triggered.</p>
+    <p>If your download does not start automatically, <a id="download-link" href="some_malicious_file.pdf">click here</a>.</p>
     <script>
-        window.location.href = "https://github.com/KevinKlopp/POC-File-Download/blob/main/some_malicious_file.pdf";
+        // Automatically start the download when the page loads
+        document.getElementById('download-link').click();
     </script>
 </body>
 </html>
